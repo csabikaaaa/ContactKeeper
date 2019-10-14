@@ -7,6 +7,8 @@ const app = express();
 connectDB();
 app.get('/', (req, res) => res.json({ msg: 'Welcome ' }));
 
+//INIT middleware
+app.use(express.json({ extended: false }));
 //define route
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));

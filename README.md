@@ -1,0 +1,4 @@
+# hub
+
+bcrypt
+express validator
